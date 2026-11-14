@@ -14,12 +14,12 @@
                 manusia dengan teknologi.
             </p>
             <div class="flex gap-4">
-                <a href="/" class="px-9 py-3.5 text-white font-semibold text-center rounded-full bg-red-700">Daftar &
-                    Pesan</a>
-                <a href="/"
+                <RouterLink :to="{ name: 'daftar' }" class="px-9 py-3.5 text-white font-semibold text-center rounded-full bg-red-700">Daftar &
+                    Pesan</RouterLink>
+                <RouterLink :to="{ name: 'masuk' }"
                     class="px-9 py-3.5 text-red-700 font-bold text-center rounded-full border-3 border-red-700">Sudah
                     Punya
-                    Akun?</a>
+                    Akun?</RouterLink>
             </div>
         </div>
         <div class="hero-visual relative w-[40%] p-0 flex items-center justify-center">

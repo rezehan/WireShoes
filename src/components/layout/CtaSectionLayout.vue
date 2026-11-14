@@ -16,10 +16,10 @@
                 Pesan layanan cuci dan perbaikan sepatu dengan mudah, lalu pantau statusnya kapan saja dalam satu
                 tempat.
             </p>
-            <a href="/"
+            <RouterLink :to="{ name: 'daftar' }"
                 class="inline-block px-10 py-4 rounded-full bg-white text-red-700 font-poppins font-bold shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
                 Daftar Sekarang
-            </a>
+            </RouterLink>
         </div>
     </section>
 </template>

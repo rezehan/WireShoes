@@ -4,9 +4,9 @@
             <!-- Atas: logo + kolom tautan -->
             <div class="flex flex-col md:flex-row md:justify-between gap-12 pb-12 border-b border-red-100">
                 <!-- Logo -->
-                <a href="/" class="self-start md:self-center">
+                <RouterLink :to="{ name: 'beranda' }" class="self-start md:self-center">
                     <img src="../../assets/WIRESHOES.png" alt="WIRESHOES" class="w-40">
-                </a>
+                </RouterLink>
 
                 <!-- Kolom tautan -->
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-16">
@@ -14,9 +14,9 @@
                     <div>
                         <h5 class="font-poppins font-bold text-red-900 mb-4">Navigasi</h5>
                         <ul class="space-y-3 text-slate-500">
-                            <li><a href="/" class="transition hover:text-red-700">Beranda</a></li>
-                            <li><a href="#how-it-works" class="transition hover:text-red-700">Alur Layanan</a></li>
-                            <li><a href="#features" class="transition hover:text-red-700">Fitur</a></li>
+                            <li><RouterLink :to="{ name: 'beranda' }" class="transition hover:text-red-700">Beranda</RouterLink></li>
+                            <li><RouterLink :to="{ name: 'beranda', hash: '#how-it-works' }" class="transition hover:text-red-700">Alur Layanan</RouterLink></li>
+                            <li><RouterLink :to="{ name: 'beranda', hash: '#features' }" class="transition hover:text-red-700">Fitur</RouterLink></li>
                         </ul>
                     </div>
 
@@ -24,8 +24,8 @@
                     <div>
                         <h5 class="font-poppins font-bold text-red-900 mb-4">Akun</h5>
                         <ul class="space-y-3 text-slate-500">
-                            <li><a href="/" class="transition hover:text-red-700">Masuk</a></li>
-                            <li><a href="/" class="transition hover:text-red-700">Daftar</a></li>
+                            <li><RouterLink :to="{ name: 'masuk' }" class="transition hover:text-red-700">Masuk</RouterLink></li>
+                            <li><RouterLink :to="{ name: 'daftar' }" class="transition hover:text-red-700">Daftar</RouterLink></li>
                         </ul>
                     </div>
 
